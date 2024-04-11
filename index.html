@@ -2,29 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css";
-    <title>Piedra, papel & tijera</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Piedra Papel Tijera</title>
+
+    <link rel="stylesheet" type="text/css" href="/Deures/style.css"/>
 </head>
 <body>
-    <h1>Juego de piedra, papel, tijera</h1>
+    
+    <h1>Juego de Piedra Papel Tijera</h1>
 
-    <p>
-        <label>
-            Introduce el nombre del jugador:
-        </label>
-        <input type="text" name="nombre"/>
-    </p>
-    <p>
-        <label>
-            ¿Cuántas partidas quieres jugar?
-        </label>
-        <input type="number" name="partidas" value="0"/>
-    </p>
+    <p><label>Introduce el nombre del jugador</label><input type="text" name="nombre"></p>
+    <p><label>¿Cuántas partidas quieres jugar?</label><input type="number" name="partidas" value="0"></p>
     <button>¡JUGAR!</button>
 
-    <h3>
-        
-    </h3>
+    <h3>Jugando la partida <span id="actual">0</span> de <span id="total"> 0 </span>.</h3>
+
+    <div id="jugador">
+        <img class="noSeleccionado" src="/Deures/Source/piedra.jpeg"/>
+        <img class="noSeleccionado" src="/Deures/Source/papel.jpeg"/>
+        <img class="noSeleccionado" src="/Deures/Source/tijera.jpeg"/>
+    </div>
+
+    <h2>Piedra, papel o tijera ... <button>¡YA!</button></h2>
+
+    <div id="maquina">
+        <img src="/Deures/Source/default.jpeg"/>
+    </div>
+
+    <div>
+        <h3>Historial de partidas</h3>
+        <ul id="historial">
+
+        </ul>
+        <button>RESET</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/Deures/index.js" type="text/javascript"></script>
 </body>
 </html>

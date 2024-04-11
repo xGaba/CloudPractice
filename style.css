@@ -1,11 +1,11 @@
 img {
     width: 100px;
     height: 100px;
-};
+}
 
 .fondoRojo {
     background-color: red;
-};
+}
 
 .seleccionado {
     border: 5px solid red;
@@ -14,4 +14,4 @@ img {
 
 .noSeleccionado {
     opacity: 0.5;
-};
+}
