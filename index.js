@@ -1,3 +1,8 @@
+const hostname = requier('os').hostname;
+const port = 3000;
+const previewUrl = `https:\\${hostname}-${port}.csb.app`
+
+
 const posibilidades = ['piedra', 'papel', 'tijera'];
 
 let started = false;
